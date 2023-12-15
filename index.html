@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Tracker</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/minty/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+    <br>
+    <div class="card">
+        <div class="card-body">         
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-candidate">Candidate Name</label>
+                        <input type="text" class="form-control" id="new-candidate">
+                    </div>
+
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-contact-info">Phone Number</label>
+                        <input type="text" class="form-control" id="new-contact-info">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-position">Position</label>
+                        <input type="text" class="form-control" id="new-position" placeholder="Position">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-status">Status</label>
+                        <input type="text" class="form-control" id="new-status">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button id="add" class="btn btn-success">Create</button>
+            </div>
+        </div>
+    </div>
+
+    <table id="list" class="table table-secondary">
+        <tr>
+            <th>Date Created</th>
+            <th>Candidate Name</th>
+            <th>Phone Number</th>
+            <th>Position</th>
+            <th>Status</th>
+            <th>Actions</th>
+
+        </tr>
+    </table>
+
+    <script src="index.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>    
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
