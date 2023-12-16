@@ -8,22 +8,24 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/minty/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
+<!--using the bootstrap grid to create the form properties for user input-->
 <body class="container">
     <br>
-    <div class="card">
+    <div class="card">  <!--used a bootstrap card for a flexable container-->
         <div class="card-body">         
-            <div class="row">
+            <div class="row"> <!--organizing content horizontally-->
                 <div class="col-sm">
                     <div class="form-group">
                         <label for="new-candidate">Candidate Name</label>
-                        <input type="text" class="form-control" id="new-candidate">
+                        <input type="text" class="form-control" id="new-candidate"> <!--the user input field-->
                     </div>
 
                 </div>
                 <div class="col-sm">
                     <div class="form-group">
                         <label for="new-contact-info">Phone Number</label>
-                        <input type="text" class="form-control" id="new-contact-info">
+                        <input type="text" class="form-control" id="new-contact-info"> <!--the user input field-->
                     </div>
                 </div>
             </div>
@@ -31,22 +33,24 @@
                 <div class="col-sm">
                     <div class="form-group">
                         <label for="new-position">Position</label>
-                        <input type="text" class="form-control" id="new-position" placeholder="Position">
+                        <input type="text" class="form-control" id="new-position" placeholder="Position"> <!--the user input field-->
                     </div>
                 </div>
                 <div class="col-sm">
                     <div class="form-group">
                         <label for="new-status">Status</label>
-                        <input type="text" class="form-control" id="new-status">
+                        <input type="text" class="form-control" id="new-status"> <!--the user input field-->
                     </div>
                 </div>
             </div>
             <div>
-                <button id="add" class="btn btn-success">Create</button>
+                <!-- This button take the form input and moves it into the table-->
+                <button id="add" class="btn btn-success">Create</button> 
             </div>
         </div>
     </div>
 
+    <!-- The table headers that will have the rows take the input from the above code-->
     <table id="list" class="table table-secondary">
         <tr>
             <th>Date Created</th>
@@ -55,7 +59,6 @@
             <th>Position</th>
             <th>Status</th>
             <th>Actions</th>
-
         </tr>
     </table>
 
